@@ -1,0 +1,17 @@
+ {
+  "name": "Calorie Count Fixes",
+  "version": "0.0.1",
+  "description": "Hide annoying ads and always use extended search for recipes",
+//  "background": {"page": "background.html"},
+  "manifest_version": 2,
+  "page_action": {
+    "name": "Calorie Count Fixes"
+ //   "icons": ["icon.png"],  20px x 20 px
+ //   "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-2.0.3.min.js",  "background.js" ],
+ //   "css": ["customStyles.css"],
+    "matches": [ "*://caloriecount.about.com/*" ]
+  }]
+}
